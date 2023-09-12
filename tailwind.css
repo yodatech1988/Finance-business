@@ -1,0 +1,39 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  @apply bg-gray-800 text-white;
+}
+
+.dark-theme {
+  @apply bg-gray-900;
+}
+
+.tab {
+  @apply bg-gray-700 p-2 rounded-lg m-2 cursor-pointer;
+}
+
+.tab.active {
+  @apply bg-gray-600;
+}
+
+.chat-message {
+  @apply bg-gray-700 p-2 rounded-lg m-2;
+}
+
+#chatContainer {
+  @apply overflow-y-auto h-screen p-4;
+}
+
+#tabContainer {
+  @apply flex overflow-x-auto whitespace-nowrap border-b-2 border-gray-600;
+}
+
+#connectionStatus {
+  @apply text-sm text-green-500;
+}
+
+#connectionStatus.disconnected {
+  @apply text-red-500;
+}
