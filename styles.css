@@ -1,0 +1,54 @@
+@import 'tailwind.css';
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+#chatContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+}
+
+#tabContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.tab {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #007bff;
+}
+
+#connectionStatus {
+    color: #ff0000;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.chat-message .sender {
+    font-weight: bold;
+}
+
+.chat-message .timestamp {
+    font-size: 0.8em;
+    color: #aaa;
+}
